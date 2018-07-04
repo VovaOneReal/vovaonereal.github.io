@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <title>VovaOne | Главная</title>
+  </head>
+  <body>
+    <!--Если это кто-то читает, то знайте, что я чуть не умер в умественном плане, пока делал эту долбанную шапку 04.01.18-->
+    <!--Спасибо flex, за то что ты есть :) 05.01.18-->
+    <!--Так, а теперь серьёзно... Шапка сайта-->
+    <header id="head" class="header-site">
+        <div class="navig-elem-blog">
+          <a title="Блог" class="navig-elem-link" href="blog.html">Блог</a>
+        </div>
+        <div class="navig-elem-project">
+          <a title="Проекты" class="navig-elem-link" href="projects.html">Проекты</a>
+        </div>
+      <div class="logo">
+        <a title="Главная" class="navig-elem-link" href="#">VovaOne</a></div>
+        <div class="navig-elem-about">
+          <a title="Обо мне" class="navig-elem-link" href="about.html">Обо мне</a>
+        </div>
+        <div class="navig-elem-un">
+          <a title="Услуги" class="navig-elem-link" href="services.html">Услуги</a>
+        </div>
+    </header>
+    <!--Основной контент-->
+    <main class="content-site">
+      <section class="blog-preview">
+        <h1><a title="Блог" class="blog-preview-links" href="blog.html">Блог</a></h1>
+        <article class="blog-preview-post">
+          <h1 title="Об этом сайте" class="blog-post-h"><a class = "blog-post-h-link" href="#">Об этом сайте.</a></h1>
+          <time class="blog-post-time" datetime="2018-01-06 14:13">06 января 2018 14:13</time>
+          <img alt="Мой сайт" src="img/post1-moy-site.png" class="blog-post-picture">
+          <p class="blog-post-text">Добро Пожаловать, юзер!<br/>
+          Этот сайт я создал, как свой личный блог, где я буду вести полноценную деятельность.
+          Здесь вы можете узнать обо мне больше чем везде. По-мимо этого, я пишу здесь все новости
+          о себе и своих действиях. Так что это единственное достоверное и официальное моё логово,
+          а не загнивающий ВКонтакте.
+          </p>
+        </article>
+      </section>
+      <section class="project-preview">
+        <h1><a title="Проекты" class="project-preview-links" href="projects.html">Проекты</a></h1>
+        <article class="project-preview-post">
+          <h1 class="project-post-h"><a title="MyBio" class = "project-post-h-link" href="#">MyBio</a></h1>
+          <img alt="MyBio" src="img/image.png" class="project-post-picture">
+          <p class="project-post-text">
+            Сайт, оформленный в стиле wikipedia. Там, любой желающий может оставить
+            свою биографию, заполняя множество разделов на своей странице.
+            Здесь так же можно найти интересующих вас людей с информацией, которую не найти
+            в рунете. Попробуйте и вы, оставить частичку себя.
+          </p>
+        </article>
+      </section>
+      <section class="video">
+        <h1 class="video-h">Видео</h1>
+        <iframe height="720px" class="video-frame" src="https://www.youtube.com/embed/b2DSCGTQZEs" frameborder="0" allowfullscreen></iframe>
+      </section>
+    </main>
+    <!--Бункер-->
+    <footer class="footer-site">
+      <div class="copy">VovaOne &copy; 2018</div>
+      <a title="Вернутся наверх страницы" href="#head">Наверх</a>
+    </footer>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>

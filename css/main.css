@@ -1,0 +1,230 @@
+/**
+ПАЛИТРА САЙТА
+Основной Цвет (ФОНЫ):
+#1D1AB2	#323086	#0B0974	#514ED9	#7573D9
+Вторичный Цвет A (ЭЛЕМЕНТЫ):
+#540EAD	#502982	#340570	#8443D6	#9A6AD6
+Вторичный Цвет B (ТЕКСТ):
+#0B5FA5	#25547B	#043C6B	#3F8FD2	#66A1D2
+
+ССЫЛКА ПАЛИТРЫ:
+https://colorscheme.ru/#4051Tw0w0w0w0
+**/
+
+/*Настройка фона*/
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(155deg, #0b0974 50%, #514ED9) no-repeat,
+    #323086;
+  font-family: 'Inconsolata', monospace, arial;
+}
+
+/*Ссылка элементов навигации и её анимация*/
+a.navig-elem-link {
+  transition: 200ms;
+  color: #66A1D2;
+  text-decoration: none;
+}
+
+a.navig-elem-link:hover {
+  transition: 200ms;
+  text-shadow:
+    0px -4px 9px,
+    0px 4px 9px;
+}
+
+/*Шапка сайта*/
+.header-site {
+  width: 98%;
+  padding: 1%;
+  margin-bottom: 4%;
+  background:
+    linear-gradient(75deg, #323086, #0b0974 50%, #323086) no-repeat,
+    #514ed9;
+  box-shadow: 0 4px 10px 0px;
+  display: inherit;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+/*Логотип*/
+.logo {
+  color: #66A1D2;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/* Контент */
+.content-site {
+  height: 3000px;
+}
+
+/* Блог и прокеты на главной */
+.blog-preview{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 435px; /* 85% = 870*/
+  ~max-height: 870px;
+  margin: 0% 2% 0% 2%;
+  border-radius: 1% 1% 0% 0%;
+  box-shadow: 8px 4px 10px -3px;
+  background: linear-gradient(180deg, #340570 40%, #502982);
+}
+
+.project-preview{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 435px; /* 85% = 870*/
+  ~max-height: 870px;
+  margin: 0% 2% 0% 2%;
+  box-shadow: 8px 4px 10px -3px;
+  background: linear-gradient(1deg, #340570 40%, #502982);
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 435px; /* 85% = 870*/
+  ~max-height: 870px;
+  margin: 0% 2% 0% 2%;
+  border-radius: 0% 0% 1% 1%;
+  box-shadow: 8px 4px 10px -3px;
+  background: linear-gradient(180deg, #340570 40%, #502982);
+}
+
+/* Заголовок блога  на главной */
+.blog-preview > h1{
+  margin: 1% 1% 0 1%;
+  text-align: center;
+  color: #0B5FA5;
+  font-size: 2.5em;
+  border-bottom: 3px solid #0B5FA5;
+  font-weight: 300;
+}
+
+/* Ссылка из превью блога */
+.blog-preview-links {
+  color: #3F8FD2;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.blog-preview-links:hover {
+  color: #66A1D2;
+  text-decoration: none;
+  text-shadow:
+    0px -4px 9px,
+    0px 4px 9px;
+}
+
+/* Заголовок проектов нат главной. */
+/* Пришлось делать отдельно, так как я тупенький =( */
+.project-preview > h1{
+  margin: 1% 1% 0 1%;
+  text-align: center;
+  color: #0B5FA5;
+  font-size: 2.5em;
+  border-bottom: 3px solid #0B5FA5;
+  font-weight: 300;
+}
+
+/* Ссылка из превью блога */
+.project-preview-links {
+  color: #3F8FD2;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.project-preview-links:hover {
+  color: #66A1D2;
+  text-decoration: none;
+  text-shadow:
+    0px -4px 9px,
+    0px 4px 9px;
+}
+
+/*
+Стилизация постов
+Заголовок
+*/
+.blog-post-h,
+.project-post-h,
+.video-h {
+  margin: 1% 0 0 1%;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/* Заголовок-ссылка */
+.blog-post-h-link,
+.project-post-h-link,
+.video-h {
+  color: #3F8FD2;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.blog-post-h-link:hover,
+.project-post-h-link:hover{
+  color: #66A1D2;
+  text-decoration: none;
+  text-shadow:
+    0px -4px 9px,
+    0px 4px 9px;
+}
+
+/* Дата публикации */
+.blog-post-time {
+  color: #0B5FA5;
+  font-size: 1.3em;
+  margin: 1%;
+}
+
+/* Превью-картинка */
+.blog-post-picture,
+.project-post-picture {
+  margin: 1%;
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+.project-post-picture {
+  float: right;
+}
+
+/* Текст поста */
+.blog-post-text,
+.project-post-text {
+  margin: 1%;
+  font-size: 1.3em;
+  color: #66A1D2;
+}
+
+/*Бункер*/
+.footer-site {
+  display: flex;
+  background:
+    linear-gradient(45deg, #514ED9 50%, #514ED9) no-repeat,
+    #514ed9;
+  box-shadow: 0 -4px 10px 0px;
+  padding: 1%;
+}
+
+.copy {
+  font-size: 1.5em;
+}
