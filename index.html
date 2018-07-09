@@ -2,45 +2,45 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>VovaOne | Главная</title>
   </head>
   <body>
     <!--Шапка сайта-->
     <header id="head" class="header-site">
       <ul>
-        <li><a title="Блог" class="navig-elem-link" href="blog.html">Блог</a></li>
-        <li><a title="Проекты" class="navig-elem-link" href="projects.html">Проекты</a></li>
-        <li><a title="Главная" class="logo navig-elem-link" href="#"><h1>VovaOne</h1></a></div></li>
-        <li><a title="Обо мне" class="navig-elem-link" href="about.html">Обо мне</a></li>
-        <li><a title="Услуги" class="navig-elem-link" href="services.html">Услуги</a></li>
+        <li><a title="Блог" class="nav-link" href="blog.html">Блог</a></li>
+        <li><a title="Проекты" class="nav-link" href="projects.html">Проекты</a></li>
+        <li><a title="Главная" class="logo nav-link" href="#">VovaOne</a></div></li>
+        <li><a title="Обо мне" class="nav-link" href="about.html">Обо мне</a></li>
+        <li><a title="Услуги" class="nav-link" href="services.html">Услуги</a></li>
       </ul>
     </header>
     <!--Основной контент-->
-    <main class="content-site">
+    <main>
       <!-- Блок "Блог" -->
-      <section class="blog-preview">
-        <h2><a title="Блог" class="blog-preview-links" href="blog.html">Блог</a></h2>
-        <article class="blog-preview-post">
-          <h3 title="Об этом сайте" class="blog-post-h"><a class = "blog-post-h-link" href="#">Об этом сайте.</a></h3>
-          <time class="blog-post-time" datetime="2018-01-06 14:13">06 января 2018 14:13</time>
-          <img alt="Мой сайт" src="img/post1-moy-site.png" class="blog-post-picture">
+      <section class="block-start blog">
+        <h2><a title="Блог" href="blog.html">Блог</a></h2>
+        <article>
+          <h3><a title="Об этом сайте" href="#" >Об этом сайте.</a></h3>
+          <img alt="Мой сайт" src="img/post1-moy-site.png" class="preview-picture float-left">
+          <time datetime="2018-01-06 14:13">06 января 2018 14:13</time>
           <p class="blog-post-text">Добро Пожаловать, юзер!<br/>
           Этот сайт я создал, как свой личный блог, где я буду вести полноценную деятельность.
           Здесь вы можете узнать обо мне больше чем везде. По-мимо этого, я пишу здесь все новости
-          о себе и своих действиях. Так что это единственное достоверное и официальное моё логово,
-          а не загнивающий ВКонтакте.
+          о себе и своих действиях. Так что это единственное достоверное и официальное моё логово.
           </p>
         </article>
       </section>
       <!-- Блок "Проекты" -->
-      <section class="project-preview">
-        <h2><a title="Проекты" class="project-preview-links" href="projects.html">Проекты</a></h2>
-        <article class="project-preview-post">
-          <h3 class="project-post-h"><a title="MyBio" class = "project-post-h-link" href="#">MyBio</a></h3>
-          <img alt="MyBio" src="img/image.png" class="project-post-picture">
+      <section class="block-center-1 project">
+        <h2><a title="Проекты" href="projects.html">Проекты</a></h2>
+        <article>
+          <h3><a title="MyBio" href="#">MyBio</a></h3>
+          <img alt="MyBio" src="img/image.png" class="preview-picture float-right">
           <p class="project-post-text">
             Сайт, оформленный в стиле wikipedia. Там, любой желающий может оставить
             свою биографию, заполняя множество разделов на своей странице.
@@ -50,20 +50,20 @@
         </article>
       </section>
       <!-- Блок "Видео" -->
-      <section class="video">
-        <h2 class="video-h"><a href="#">Видео</a></h2>
+      <section class="block-center-2 video">
+        <h2>Видео</h2>
         <iframe height="720px" class="video-frame" src="https://www.youtube.com/embed/b2DSCGTQZEs" frameborder="0" allowfullscreen></iframe>
       </section>
       <!-- Блок "Музыка" -->
-      <section>
-        <h2><a href="#">Музыка</a></h2>
+      <section class="block-end-2 music">
+        <h2>Музыка</h2>
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/347562222&color=%2374a464&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
       </section>
     </main>
     <!--Бункер-->
-    <footer class="footer-site">
+    <footer>
       <p class="copy">VovaOne &copy; 2018</p>
-      <a title="Вернутся наверх страницы" href="#head">Наверх</a>
+      <p class="toHeader"><a title="Вернутся наверх страницы" href="#head">Наверх</a></p>
     </footer>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
