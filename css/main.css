@@ -1,4 +1,4 @@
-/**
+/*
 ПАЛИТРА САЙТА
 Основной Цвет (ФОНЫ):
 #1D1AB2	#323086	#0B0974	#514ED9	#7573D9
@@ -9,14 +9,17 @@
 
 ССЫЛКА ПАЛИТРЫ:
 https://colorscheme.ru/#4051Tw0w0w0w0
-**/
-
-/* Заметки */
-/*
-- Задать флексы по запросу медиа для шапки
-- Решить проблему с отступом у data-time
 */
 
+/*
+Эта таблица стилей является основной для всех страниц на сайте.
+ */
+
+ /* Заметки
+ - Задать флексы по запросу медиа для шапки
+ - Решить проблему с отступом у data-time
+ - Решить проблему с футером на странице с "Услугами"
+ */
 
 /* Настройка страницы */
 html,
@@ -50,13 +53,22 @@ h2 {
   color: #0B5FA5;
   font-size: 2.5em;
   border-bottom: 3px solid #0B5FA5;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3 {
-  margin: 1% 0 0 1%;
+  color: #0B5FA5;
+  margin: 2% 0 1% 1%;
   font-size: 2em;
   font-weight: 400;
+}
+
+b {
+  font-weight: bold
+}
+
+i {
+  font-style: italic;
 }
 
 /* Шапка */
@@ -108,14 +120,12 @@ a.nav-link:hover {
 }
 
 
-
-/* Основной контент */
-
 /* Стилизация фона, размера и отступов у блоков  */
 /* Полностью стилизованый блок */
 .block {
-  min-height: 435px; /* 85% = 870*/
-  ~max-height: 870px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0% 2% 0% 2%;
   border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
@@ -124,6 +134,9 @@ a.nav-link:hover {
 
 /* Стилизированное начало блока */
 .block-start {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   min-height: 435px; /* 85% = 870*/
   ~max-height: 870px;
   margin: 0% 2% 0% 2%;
@@ -134,6 +147,9 @@ a.nav-link:hover {
 
 /* Стилизированная середина блока 1 */
 .block-center-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   min-height: 435px; /* 85% = 870*/
   ~max-height: 870px;
   margin: 0% 2% 0% 2%;
@@ -143,6 +159,9 @@ a.nav-link:hover {
 
 /* Стилизированная середина блока 2 */
 .block-center-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   min-height: 435px; /* 85% = 870*/
   ~max-height: 870px;
   margin: 0% 2% 0% 2%;
@@ -152,58 +171,28 @@ a.nav-link:hover {
 
 /* Стилизированный конец блока, если центр-1*/
 .block-end-1 {
-    min-height: 435px; /* 85% = 870*/
-    ~max-height: 870px;
-    margin: 0% 2% 0% 2%;
-    border-radius: 0% 0% 1% 1%;
-    box-shadow: 8px 4px 10px -3px;
-    background: linear-gradient(180deg, #340570 40%, #502982);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 435px; /* 85% = 870*/
+  ~max-height: 870px;
+  margin: 0% 2% 0% 2%;
+  border-radius: 0% 0% 1% 1%;
+  box-shadow: 8px 4px 10px -3px;
+  background: linear-gradient(180deg, #340570 40%, #502982);
 }
 
 /* Стилизированный конец блока, если центр-2*/
 .block-end-2 {
-    min-height: 435px; /* 85% = 870*/
-    ~max-height: 870px;
-    margin: 0% 2% 0% 2%;
-    border-radius: 0% 0% 1% 1%;
-    box-shadow: 8px 4px 10px -3px;
-    background: linear-gradient(1deg, #340570 40%, #502982);
-}
-
-
-
-/* Флекс-параметр для блоков */
-.blog,
-.project,
-.video,
-.music
-{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-/* Дата публикации */
-time {
-  color: #0B5FA5;
-  font-size: 1em;
-}
-
-/* Превью-картинка */
-.preview-picture {
-  margin: 1%;
-  border-radius: 5px;
-  height: 300px;
-  width: 300px;
-}
-
-/* Обтекаемость (изначально для превью-картинок) */
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
+  min-height: 435px; /* 85% = 870*/
+  ~max-height: 870px;
+  margin: 0% 2% 0% 2%;
+  border-radius: 0% 0% 1% 1%;
+  box-shadow: 8px 4px 10px -3px;
+  background: linear-gradient(1deg, #340570 40%, #502982);
 }
 
 /* Текст постов */
@@ -213,7 +202,37 @@ p {
   color: #66A1D2;
 }
 
+/* Дата публикации */
+time {
+  color: #0B5FA5;
+  font-size: 1em;
+}
 
+/* Настройка картинок */
+.preview-picture {
+  margin: 1%;
+  border-radius: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+.portrait-picture {
+  margin: 1% ;
+  border-radius: 5px;
+  height: 400px;
+  width: 300px;
+}
+
+
+
+/* Обтекаемость (изначально для превью-картинок) */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
 
 /*Бункер*/
 footer {
