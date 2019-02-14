@@ -137,10 +137,10 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 435px; /* 85% = 870*/
+  min-height: 540px; /* 85% = 870*/
   ~max-height: 870px;
-  margin: 0% 2% 0% 2%;
-  border-radius: 1% 1% 0% 0%;
+  margin: 0% 2% 1% 2%;
+  border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
   background: linear-gradient(180deg, #340570 40%, #502982);
 }
@@ -150,9 +150,10 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 435px; /* 85% = 870*/
+  min-height: 540px; /* 85% = 870*/
   ~max-height: 870px;
-  margin: 0% 2% 0% 2%;
+  margin: 0% 2% 1% 2%;
+  border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
   background: linear-gradient(1deg, #340570 40%, #502982);
 }
@@ -162,9 +163,10 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 435px; /* 85% = 870*/
+  min-height: 540px; /* 85% = 870*/
   ~max-height: 870px;
-  margin: 0% 2% 0% 2%;
+  margin: 0% 2% 1% 2%;
+  border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
   background: linear-gradient(180deg, #340570 40%, #502982);
 }
@@ -174,10 +176,10 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 435px; /* 85% = 870*/
+  min-height: 500px; /* 85% = 870*/
   ~max-height: 870px;
   margin: 0% 2% 0% 2%;
-  border-radius: 0% 0% 1% 1%;
+  border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
   background: linear-gradient(180deg, #340570 40%, #502982);
 }
@@ -187,10 +189,10 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-height: 435px; /* 85% = 870*/
+  min-height: 500px; /* 85% = 870*/
   ~max-height: 870px;
   margin: 0% 2% 0% 2%;
-  border-radius: 0% 0% 1% 1%;
+  border-radius: 1% 1% 1% 1%;
   box-shadow: 8px 4px 10px -3px;
   background: linear-gradient(1deg, #340570 40%, #502982);
 }
