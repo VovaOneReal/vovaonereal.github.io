@@ -59,6 +59,10 @@ main {
   flex-direction: row;
 }
 
+article {
+  border-bottom: 2px solid lightgray;
+}
+
 a {
   text-decoration: underline;
   text-decoration-style: dashed;
@@ -105,6 +109,13 @@ h3 {
   margin: 1% 0 1% 0;
 }
 
+h4 {
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 1% 0;
+  margin: 1% 0 1% 0;
+}
+
 p {
   padding: 0.5% 0;
   margin: 0.5% 0;
@@ -119,9 +130,15 @@ b {
   font-weight: bold;
 }
 
+ul {
+  list-style-type: circle;
+}
+
 li {
   display: list-item;
   list-style-position: inside;
+  margin: 0.5% 0;
+  padding: 0.5% 0;
 }
 
 nav {
@@ -194,7 +211,7 @@ nav {
   right: 20%;
 }
 
-.site-blog {
+.blog-section {
   border: 1px solid black;
   border-radius: 3px;
   box-shadow: 1px 1px 2px;
@@ -202,19 +219,116 @@ nav {
   display: flex;
   background-color: white;
   flex-direction: column;
-  flex-basis: 80%;
+  flex-basis: 50%;
   flex-grow: 1;
-  margin: 1% 0.5% 1% 0;
+  margin: 0 0.5% 0.5% 0;
 }
-.site-blog article {
+.blog-section article {
   display: flex;
   flex-direction: column;
 }
-.site-blog article time {
+.blog-section article time {
   font-size: 10pt;
   align-self: flex-end;
   padding: 1% 0 1% 0;
   margin: 1% 0 1% 0;
+}
+
+.project-section {
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px;
+  padding: 3%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-grow: 1;
+  margin: 0.5% 0.5% 0 0;
+}
+.project-section article {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-block {
+  border-bottom: 2px solid lightgray;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.project-img {
+  border-radius: 100%;
+  box-shadow: 2px 2px 2px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid black;
+  margin: 0 1% 1% 0;
+}
+
+.project-info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 1%;
+}
+.project-info p {
+  flex-grow: 1;
+}
+
+.project-progress {
+  border-bottom: 2px solid lightgray;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.project-progress-percent {
+  font-weight: bold;
+  font-size: 18pt;
+  margin: 1% 1.5% 1% 0;
+  padding: 1% 0;
+}
+
+.project-progress-summary {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-progressbar {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 1% 0 1% 1.5%;
+}
+
+.progress-completed {
+  width: 50%;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 5px 0 0 5px;
+}
+
+.progress-uncompleted {
+  width: 50%;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 0 5px 5px 0;
+}
+
+.project-progress-label {
+  font-style: italic;
+  font-size: 10pt;
+  margin: 0.25% 0;
+  padding: 1% 0;
+  align-self: center;
 }
 
 .site-about {
@@ -336,6 +450,12 @@ div.resume li {
 
 .spoiler:hover {
   color: black;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 0 1% 0;
 }
 
 /*# sourceMappingURL=style.css.map */

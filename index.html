@@ -25,16 +25,48 @@
 			</nav>
 		</header>
 		<main class="main-row">
-			<section class="site-blog">
-				<article>
+			<div class="left-column">
+				<section class="blog-section">
 					<h2>Записи</h2>
-					<h3>Личный блог</h3>
-					<p>Ещё когда я только осваивал веб-вёрстку, я хотел завести собственный блог. Теперь он у меня есть.</p>
-					<p>Как и ещё одно место, где я буду что-то публиковать раз в полгода.</p>
-					<p><span class="spoiler">Ну хоть где-то я теперь могу делать такие спойлеры.</span></p>
-					<time datetime="2021-08-08">8 августа 2021 г.</time>
-				</article>
-			</section>
+					<article>
+						<h3>Личный блог</h3>
+						<p>Ещё когда я только осваивал веб-вёрстку, я хотел завести собственный блог. Теперь он у меня есть.</p>
+						<p>Как и ещё одно место, где я буду что-то публиковать раз в полгода.</p>
+						<p><span class="spoiler">Ну хоть где-то я теперь могу делать такие спойлеры.</span></p>
+						<time datetime="2021-08-08">8 августа 2021 г.</time>
+					</article>
+				</section>
+				<section class="project-section">
+					<h2>Текущие проекты</h2>
+					<article>
+						<h3>Веб-сайт</h3>
+						<div class="project-block">
+							<img class="project-img" src="img/projects/website-preview.png" alt="Превью для этого блока">
+							<div class="project-info">
+								<div class="project-progress">
+									<span class="project-progress-percent">50%</span>
+									<div class="project-progress-summary">
+										<div class="project-progressbar">
+											<div class="progress-completed"></div>
+											<div class="progress-uncompleted"></div>
+										</div>
+										<!-- <span class="project-progress-label"></span> -->
+									</div>
+								</div>
+								<p>Конечно, сайт уже есть и он работает. Но не так, как должен: у него нет мобильной версии и он разъезжается при увеличении. Поэтому есть необходимость исправить это.</p>
+							</div>
+						</div>
+						<div>
+							<h4>Чек-лист</h4>
+								<ul>
+									<li>Сделать сайт валидным.</li>
+									<li>Макет сайта для мобильных платформ.</li>
+									<li>Макеты страниц для готовых проектов.</li>
+								</ul>
+						</div>
+					</article>
+				</section>
+			</div>
 			<aside class="site-about">
 				<div class="about-header">
 					<img src="img/avatar.png">
@@ -44,17 +76,24 @@
 					<p>Родился в 2003 году в одном из городов России. С ранних лет больше всего интересовал компьютер, но чаще использовал его для игр. Со временем начало тянуть к программированию, что стало моим основным увлечением. Время от времени интересуюсь и приобретаю другие хобби.</p>
 					<ul>
 						<li class="list-program"><b>Программирование</b></li>
-						<p>Начиная с 2014 года, самостоятельно брался за изучение языков программирования, хотя за всё время не слишком преуспел в этом.</p>
-						<p>На данный момент лучше всего знаю <span class="keyword-mark">Python</span>. Знаком с <span class="keyword-mark">C++</span> и <span class="keyword-mark">Lua</span>. Также имею небольшой опыт работы с <span class="keyword-mark">PyQt</span>; <span class="keyword-mark">Godot Engine</span>. Владею <span class="keyword-mark">Git</span> и <span class="keyword-mark">GitHub</span> на базовом уровне.</p>
+					</ul>
+					<p>Начиная с 2014 года, самостоятельно брался за изучение языков программирования, хотя за всё время не слишком преуспел в этом.</p>
+					<p>На данный момент лучше всего знаю <span class="keyword-mark">Python</span>. Знаком с <span class="keyword-mark">C++</span> и <span class="keyword-mark">Lua</span>. Также имею небольшой опыт работы с <span class="keyword-mark">PyQt</span>; <span class="keyword-mark">Godot Engine</span>. Владею <span class="keyword-mark">Git</span> и <span class="keyword-mark">GitHub</span> на базовом уровне.</p>
+					<ul>
 						<li class="list-web"><b>Веб-вёрстка</b></li>
-						<p>В 2016 году решил <a href="img/other/myfirstsite.jpg" target="_blank">попробовать</a> изучить <span class="keyword-mark">HTML</span> и <span class="keyword-mark">CSS</span>. Получалось неплохо. Со временем навык стал ещё лучше. Несколько раз пытался верстать свои сайты, но лучше всего у меня пока получилось сверстать <i>этот</i> сайт.</p>
-						<p>Знаком с <span class="keyword-mark">SASS</span>.</p>
+					</ul>
+					<p>В 2016 году решил <a href="img/other/myfirstsite.jpg" target="_blank">попробовать</a> изучить <span class="keyword-mark">HTML</span> и <span class="keyword-mark">CSS</span>. Получалось неплохо. Со временем навык стал ещё лучше. Несколько раз пытался верстать свои сайты, но лучше всего у меня пока получилось сверстать <i>этот</i> сайт.</p>
+					<p>Знаком с <span class="keyword-mark">SASS</span>.</p>
+					<ul>
 						<li class="list-drawing"><b>Рисование и цифровая графика</b></li>
-						<p>В детстве не любил рисовать. Примерно с 2016 года решил попробовать себя в этом деле, после чего изменил своё мнение. В данный момент рисую на низком уровне, однако всё ещё имею желание значительно развивать этот навык.</p>
-						<p>Интересуюсь 3D-моделированием для которого использую <span class="keyword-mark">Blender.</span></p>
-						<p>Также умею работать на приемлемом уровне в Adobe <span class="keyword-mark">Photoshop</span> и <span class="keyword-mark">Illustrator</span>.</p>
+					</ul>
+					<p>В детстве не любил рисовать. Примерно с 2016 года решил попробовать себя в этом деле, после чего изменил своё мнение. В данный момент рисую на низком уровне, однако всё ещё имею желание значительно развивать этот навык.</p>
+					<p>Интересуюсь 3D-моделированием для которого использую <span class="keyword-mark">Blender.</span></p>
+					<p>Также умею работать на приемлемом уровне в Adobe <span class="keyword-mark">Photoshop</span> и <span class="keyword-mark">Illustrator</span>.</p>
+					<ul>
 						<li class="list-music"><b>Музыка</b></li>
-						<p>Некоторое время интересовался написанием музыки в <span class="keyword-mark">FL Studio</span>. Больших успехов не добился. Имею с десяток треков, загруженных на Soundcloud.</p>
+					</ul>
+					<p>Некоторое время интересовался написанием музыки в <span class="keyword-mark">FL Studio</span>. Больших успехов не добился. Имею с десяток треков, загруженных на Soundcloud.</p>
 				</div>
 			</aside>
 			</main>

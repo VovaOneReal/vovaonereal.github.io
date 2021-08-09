@@ -1,0 +1,80 @@
+.project-section
+	+box
+	flex-direction: column
+	flex-basis: 50%
+	flex-grow: 1
+	margin: 0.5% 0.5% 0 0
+
+	article
+		display: flex
+		flex-direction: column
+
+.project-block
+	+underline
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+
+.project-img
+	+image
+	width: 128px
+	height: 128px
+	border: 1px solid black
+	margin: 0 1% 1% 0
+
+.project-info
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	margin: 0 0 0 1%
+
+	p
+		flex-grow: 1
+
+.project-progress
+	+underline
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	align-items: center
+	padding-bottom: 1%
+
+.project-progress-percent
+	font-weight: bold
+	font-size: 18pt
+	margin: 1% 1.5% 1% 0
+	padding: 1% 0
+
+.project-progress-summary
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	width: 100%
+
+.project-progressbar
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	margin: 1% 0 1% 1.5%
+
+.progress-completed
+	width: 50%
+	padding: 5px
+	background-color: gray
+	border-radius: 5px 0 0 5px
+
+.progress-uncompleted
+	width: 50%
+	padding: 5px
+	background-color: whitesmoke
+	// border: 1px solid gray
+	border-radius: 0 5px 5px 0
+
+.project-progress-label
+	font-style: italic
+	font-size: 10pt
+	margin: 0.25% 0
+	padding: 1% 0
+	align-self: center
