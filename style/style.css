@@ -211,6 +211,14 @@ nav {
   right: 20%;
 }
 
+@media screen and (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+  }
+  .site-header nav {
+    flex-direction: column;
+  }
+}
 .blog-section {
   border: 1px solid black;
   border-radius: 3px;
@@ -331,6 +339,10 @@ nav {
   align-self: center;
 }
 
+.list-completed {
+  list-style-image: url("../img/icons/completed-icon.png");
+}
+
 .site-about {
   border: 1px solid black;
   border-radius: 3px;
@@ -433,6 +445,29 @@ div.resume li {
   width: 48px;
 }
 
+@media screen and (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  .title {
+    border-bottom: 2px solid lightgray;
+  }
+  .title nav {
+    flex-direction: column;
+  }
+
+  .main-row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+  }
+}
 .keyword-mark {
   display: inline-block;
   font-family: "Courier New", serif;
