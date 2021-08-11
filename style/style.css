@@ -185,6 +185,8 @@ nav {
 }
 
 .new-label {
+  padding: 0 1% 0 1%;
+  margin: 0 1% 0 1%;
   font-size: 10pt;
   font-weight: bold;
   color: red;
@@ -194,6 +196,8 @@ nav {
 }
 
 .wip-label {
+  padding: 0 1% 0 1%;
+  margin: 0 1% 0 1%;
   font-size: 10pt;
   font-weight: bold;
   color: purple;
@@ -202,6 +206,8 @@ nav {
 }
 
 .wip-label-as-second {
+  padding: 0 0.5% 0 0.5%;
+  margin: 0 0.5% 0 0.5%;
   font-size: 10pt;
   font-weight: bold;
   color: purple;
@@ -437,7 +443,7 @@ div.resume li {
   width: 48px;
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 721px) {
   .site-header {
     flex-direction: column;
   }
@@ -454,8 +460,15 @@ div.resume li {
     margin-top: 1%;
     flex-direction: column;
   }
-  header nav a, header nav span {
+  header nav a {
     padding: 1%;
+    width: 100%;
+    text-align: center;
+  }
+  header nav span {
+    padding: 1%;
+    width: 100%;
+    text-align: center;
   }
 
   .main-row {
@@ -489,6 +502,16 @@ div.resume li {
   .links {
     margin-left: 0;
     margin-top: 1%;
+  }
+
+  .wip-label-as-second {
+    font-size: 10pt;
+    font-weight: bold;
+    color: purple;
+    text-shadow: 2px 2px pink;
+    vertical-align: super;
+    position: static;
+    right: 0%;
   }
 }
 .keyword-mark {
