@@ -7,6 +7,7 @@
 @import blog-section
 @import projects-section
 @import about-section
+@import last-activity-section
 @import site-footer
 
 @import media720px
@@ -27,10 +28,22 @@
 .spoiler:hover
 	color: black
 
-.left-column
+.left-column, .right-column
+	display: -webkit-flex
+	display: -ms-flex
 	display: flex
 	flex-direction: column
-	margin: 1% 0 1% 0
+	margin: 1vh 0
 
-// .main-row
-// 	display: flex
+.left-column
+	margin-right: 0.5vh
+	flex-basis: 75%
+
+.right-column
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	flex-basis: 25%
+	flex-shrink: 0
+	margin-left: 0.5vh

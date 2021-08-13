@@ -1,9 +1,7 @@
 .site-about
 	+box
 	flex-direction: column
-	flex-basis: 20%
-	flex-shrink: 0
-	margin: 1% 0 1% 0.5%
+	margin-bottom: 0.5vh
 
 	img
 		+image
@@ -11,19 +9,24 @@
 		width: 64px
 
 .about-header
+	display: -webkit-flex
+	display: -ms-flex
 	display: flex
 	align-items: center
 	justify-content: space-between
 	margin-bottom: 5%
 
 	img
+		display: -webkit-flex
+		display: -ms-flex
 		display: flex
 		flex-basis: 10%
 
 	h2
-		display: flex
-		justify-content: center
+		text-align: center
+		align-self: flex-start
 		flex-basis: 90%
+		margin-left: 1vh
 
 div.resume
 	p

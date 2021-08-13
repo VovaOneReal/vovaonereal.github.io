@@ -1,18 +1,25 @@
 nav
+	display: -webkit-flex
+	display: -ms-flex
 	display: flex
-	flex-basis: 100%
+	flex-basis: 60%
 	align-items: center
-	justify-content: space-around
+	justify-content: space-between
 
 .site-header
 	+box
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
 	align-items: center
-	margin: 1% 0
+	margin: 1vh 0
 	padding: 1% 5%
 
 .title
+	display: -webkit-flex
+	display: -ms-flex
 	display: flex
-	flex-basis: 60%
+	flex-basis: 40%
 	align-items: center
 
 .logo-img
@@ -20,7 +27,7 @@ nav
 	height: 64px
 	width: 64px
 	border: 1px solid black
-	padding: 1%
+	padding: 5px
 	margin-right: 7%
 
 .title-texts
@@ -30,8 +37,7 @@ nav
 	font-size: 12pt
 
 .new-label
-	padding: 0 1% 0 1%
-	margin: 0 1% 0 1%
+	margin: 0 2% 0 2%
 	font-size: 10pt
 	font-weight: bold
 	color: red
@@ -40,21 +46,9 @@ nav
 	position: relative
 
 .wip-label
-	padding: 0 1% 0 1%
-	margin: 0 1% 0 1%
+	margin: 0 2% 0 2%
 	font-size: 10pt
 	font-weight: bold
 	color: purple
 	text-shadow: 2px 2px pink
 	vertical-align: super
-
-.wip-label-as-second
-	padding: 0 0.5% 0 0.5%
-	margin: 0 0.5% 0 0.5%
-	font-size: 10pt
-	font-weight: bold
-	color: purple
-	text-shadow: 2px 2px pink
-	vertical-align: sub
-	position: relative
-	right: 20%

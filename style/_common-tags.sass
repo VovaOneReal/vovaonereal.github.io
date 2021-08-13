@@ -1,14 +1,14 @@
 body
 	background-image: url("../img/bg1.jpg")
-	// display: flex
-	// flex-direction: column
 	font-family: 'Lora', "Courier New", serif
 	margin-left: 15%
 	margin-right: 15%
 
 main
+	display: -webkit-flex
+	display: -ms-flex
 	display: flex
-	flex-direction: row
+	margin: 1vh 0
 
 article
 	+underline
@@ -21,16 +21,6 @@ a
 
 a:hover
 	color: purple
-
-// a.obvious-link
-// 	text-decoration: none
-// 	color: black
-// 	transition-duration: 250ms
-//
-// a.obvious-link:hover
-// 	color: purple
-// 	text-decoration: underline
-// 	text-decoration-style: dashed
 
 a.obvious-link
 	text-decoration: underline
@@ -46,30 +36,26 @@ a.obvious-link:hover
 h1
 	font-size: 26pt
 	font-weight: bold
-	padding: 1% 0
 	margin: 1% 0
 
 h2
 	font-size: 24pt
 	font-weight: bold
-	padding: 1% 0 3%
 	margin: 0 0 2% 0
+	padding-bottom: 1vh
 	+underline
 
 h3
 	font-size: 18pt
 	font-weight: bold
-	padding: 1% 0
 	margin: 1% 0 1% 0
 
 h4
 	font-size: 16pt
 	font-weight: bold
-	padding: 1% 0
 	margin: 1% 0 1% 0
 
 p
-	padding: 0.5% 0
 	margin: 0.5% 0
 	line-height: normal
 
@@ -85,5 +71,4 @@ ul
 li
 	display: list-item
 	list-style-position: inside
-	margin: 0.5% 0
-	padding: 0.5% 0
+	margin: 1.5% 0
