@@ -415,8 +415,6 @@ div.resume li {
 }
 
 .l-act-icon, .l-act-link {
-  width: 16px;
-  height: 16px;
   flex-basis: 5%;
   align-self: center;
 }
@@ -477,75 +475,6 @@ div.resume li {
   width: 48px;
 }
 
-@media only screen and (max-width: 960px) {
-  .site-header {
-    flex-direction: column;
-  }
-
-  .title {
-    border-bottom: 2px solid lightgray;
-    width: 100%;
-    padding: 2%;
-    margin-bottom: 1%;
-  }
-
-  header nav {
-    width: 100%;
-    margin-top: 1%;
-    flex-direction: column;
-  }
-  header nav a {
-    width: 100%;
-    text-align: center;
-  }
-  header nav span {
-    width: 100%;
-    text-align: center;
-  }
-
-  .main-row {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bottom-row {
-    flex-direction: column;
-  }
-
-  .blog-section {
-    margin-right: 0;
-  }
-
-  .project-section {
-    margin-right: 0;
-  }
-
-  .site-about {
-    margin-left: 0;
-  }
-
-  .copyright {
-    margin-right: 0;
-    margin-bottom: 1%;
-  }
-
-  .links {
-    margin-left: 0;
-    margin-top: 1%;
-  }
-
-  .wip-label-as-second {
-    font-size: 10pt;
-    font-weight: bold;
-    color: purple;
-    text-shadow: 2px 2px pink;
-    vertical-align: super;
-    position: static;
-    right: 0%;
-  }
-}
 .keyword-mark {
   display: inline-block;
   font-family: "Courier New", serif;
@@ -563,6 +492,10 @@ div.resume li {
 
 .spoiler:hover {
   color: black;
+}
+
+.hide {
+  display: none;
 }
 
 .left-column, .right-column {
@@ -586,6 +519,81 @@ div.resume li {
   flex-basis: 25%;
   flex-shrink: 0;
   margin-left: 0.5vh;
+}
+
+@media only screen and (max-width: 960px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  .title {
+    border-bottom: 2px solid lightgray;
+    padding: 2%;
+    margin-bottom: 1%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-img {
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px;
+    margin-right: 3%;
+  }
+
+  header nav {
+    width: 100%;
+    margin-top: 1%;
+    flex-direction: column;
+  }
+  header nav a {
+    width: 100%;
+    margin: 1% 0;
+    text-align: center;
+  }
+  header nav span {
+    width: 100%;
+    margin: 1% 0;
+    text-align: center;
+  }
+
+  .main-row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .left-column {
+    margin-right: 0;
+  }
+
+  .right-column {
+    margin-left: 0;
+  }
+
+  .copyright {
+    margin-right: 0;
+    margin-bottom: 1%;
+  }
+
+  .links {
+    margin-left: 0;
+    margin-top: 1%;
+  }
+
+  .wip-label-as-second {
+    font-size: 10pt;
+    font-weight: bold;
+    color: purple;
+    text-shadow: 2px 2px pink;
+    vertical-align: super;
+    position: static;
+    right: 0%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
